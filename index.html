@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eugénie Cafe · أوجيني</title>
+<meta name="description" content="Eugénie Cafe: a velvet-red parlor of old memories in Cairo. Coffee, desserts and waffles, open 7 AM to 2 AM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600&family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Eugénie Cafe","telephone":"+201013414217","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"openingHours":"Mo-Su 07:00-02:00","sameAs":["https://www.instagram.com/eugeniecafe"]}</script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#top">Eugénie</a>
+  <nav>
+    <a href="#story" data-i18n="nav_story"></a><a href="#menu" data-i18n="nav_menu"></a><a href="#gallery" data-i18n="nav_gallery"></a><a href="#visit" data-i18n="nav_visit"></a>
+    <button id="lang"></button>
+  </nav>
+</header>
+
+<main>
+<div class="herowrap" id="top"><section class="hero">
+  <div>
+    <span id="open" class="open"></span>
+    <h1 data-i18n="h1"></h1>
+    <p data-i18n="sub"></p>
+    <div class="cta"><a class="btn dir" data-i18n="directions"></a><a class="btn ghost wa" data-i18n="order"></a></div>
+  </div>
+  <div class="arch"><video autoplay muted loop playsinline poster="images/hero-poster.jpg"><source src="videos/interior.mp4" type="video/mp4"></video></div>
+</section></div>
+<div class="band" id="story"><section class="story">
+  <div class="stamp" aria-hidden="true"><img src="images/stamp.png" alt="" onerror="this.remove()"><i>E</i><small>Cairo · Egypt</small></div>
+  <h2 data-i18n="story_h"></h2>
+  <p class="lead" data-i18n="story_p1"></p>
+  <p data-i18n="story_p2"></p>
+</section></div>
+
+<section id="menu">
+ <div class="menucard">
+  <h2 class="mt"><span class="en">MENU</span><i></i><span class="ar" lang="ar">المِنيو</span></h2>
+  <p class="note" data-i18n="menu_note"></p>
+  <nav class="chips" id="chips" aria-label="Menu categories"></nav>
+  <div id="cats"></div>
+ </div>
+</section>
+
+<div class="band" id="gallery"><section>
+  <h2 data-i18n="gallery_h"></h2>
+  <div class="wall">
+    <figure class="f1"><img src="images/g1.jpg" alt="A corner with antique plates and bentwood chairs" loading="lazy"><figcaption data-i18n="c1"></figcaption></figure>
+    <figure class="f2"><img src="images/g2.jpg" alt="Antique plates and a wall lamp on the burgundy wall" loading="lazy"><figcaption data-i18n="c2"></figcaption></figure>
+    <figure class="f3"><img src="images/g5.jpg" alt="Croissant and a coffee cup under a framed portrait" loading="lazy"><figcaption data-i18n="c3"></figcaption></figure>
+    <figure class="f4"><img src="images/g6.jpg" alt="Evening view of the dining room" loading="lazy"><figcaption data-i18n="c4"></figcaption></figure>
+  </div>
+</section></div>
+
+<section id="reviews">
+  <h2 data-i18n="rev_h"></h2>
+  <p class="score"><b>4.8</b><span class="stars">★★★★★</span><span data-i18n="rev_sub"></span></p>
+  <p class="center small" data-i18n="rev_note"></p>
+  <div class="revs" id="revs"></div>
+  <p class="center"><a class="dir link" data-i18n="rev_link"></a></p>
+</section>
+
+<section id="visit" class="center">
+  <h2 data-i18n="visit_h"></h2>
+  <p data-i18n="address"></p><p data-i18n="hours"></p><p data-i18n="modes"></p>
+  <div class="cta mid"><a class="btn dir" data-i18n="directions"></a><a class="btn call" data-i18n="call"></a><a class="btn wa" data-i18n="wa"></a><a class="btn ghost igp" data-i18n="ig"></a></div>
+</section>
+</main>
+
+<footer><span class="logo">Eugénie</span><p><span id="credit"></span></p></footer>
+<div class="bar"><a class="dir" data-i18n="directions"></a><a class="call" data-i18n="call"></a><a class="wa" data-i18n="wa"></a></div>
+
+<script src="config.js"></script><script src="menu-data.js"></script><script src="main.js"></script>
+</body>
+</html>
